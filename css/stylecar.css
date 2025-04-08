@@ -16,19 +16,20 @@
     font-size: larger;
     margin: 50px;
     font-weight: bolder;
-    
-    
+
+
 
 }
 
 .logo {
     margin-left: 30px;
-    margin-top:  10px; ;
+    margin-top: 10px;
+    ;
     height: 70px;
     width: 70px;
     align-items: center;
     cursor: pointer;
-    
+
 }
 
 #backimage {
@@ -47,23 +48,26 @@
 
 ul a {
     text-decoration: none;
-    color: rgb(197, 100, 20);
-    
+    color: black;
+
 }
-a:hover{
-    background-color: rgb(201, 209, 83);
+
+a:hover {
+    background-color: yellow;
 }
-div#info{
-    text-align:center ;
+
+div#info {
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    text-transform:capitalize;
+    text-transform: capitalize;
     word-spacing: 8px;
 }
-.btn{
+
+.btn {
     position: absolute;
     top: 68%;
     left: 50%;
@@ -78,7 +82,61 @@ div#info{
     text-align: center;
 
 }
-.btn:hover{
+
+.btn:hover {
     background-color: rgb(40, 75, 233);
 }
 
+#custom-table {
+    border-radius: 10px;
+    position: relative;
+    top: -150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.95);
+
+}
+
+.single-model-search {
+    display: flex;
+    flex-direction: column;
+}
+
+.single-model-search h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.search-button-container {
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-button-container button {
+    background-color: #524bfc;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search-button-container button:hover {
+    background-color: #403bd1;
+}
