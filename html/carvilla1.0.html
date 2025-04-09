@@ -2,134 +2,229 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarVilla1.0</title>
-    <link rel="stylesheet" href="/css/stylecar.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarVilla1.0</title>
+  <link rel="stylesheet" href="/css/stylecar.css">
 </head>
 
 <body>
-    <div id="first page">
-        <div id="header">
-            <div id="navbar">
-                <div class="logo"><img src="../Assets/Logo/logoimage.png"></div>
+  <div id="first page">
+    <div id="header">
+      <div id="navbar">
+        <div class="logo"><img src="../Assets/Logo/logoimage.png"></div>
 
-                <ul id="menu">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">SERVICE</a></li>
-                    <li><a href="">FEATURED CARS</a></li>
-                    <li><a href="">NEW CARS</a></li>
-                    <li><a href="">BRANDS</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="info">
-            <h1>get your desired car in resonable price</h1>
-            <br><br>
-            <h2>Find your dream car at the best price shop now...!</h2>
-        </div>
-        <div><button class="btn">Contact As</button></div>
-        <div></div>
+        <ul id="menu">
+          <li><a href="" onclick="myFunction()">HOME</a></li>
+          <li><a href="" onclick="Myfunction()">SERVICE</a></li>
+          <li><a href="" onclick="FEATURED_CARS()">FEATURED CARS</a></li>
+          <li><a href="" onclick="NEW_CARS()">NEW CARS</a></li>
+          <li><a href="" onclick="BRANDS()">BRANDS</a></li>
+          <li><a href="" onclick="CONTACT()">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="info">
+      <h1>get your desired car in resonable price</h1>
+      <br><br>
+      <h2>Find your dream car at the best price shop now...!</h2>
+    </div>
+    <div><button class="btn">Contact As</button></div>
+    <div></div>
 
-        <div>
-            <img id="backimage" src="../Assets/welcome/carvilla88bg.png">
-        </div>
-        <div id="custom-table">
-            <!-- Column 1 -->
-            <div class="single-model-search">
-              <h2>Select Year</h2>
-              <select class="form-control">
-                <option value="default">Year</option>
-                <option value="2025">2025</option>
-                <option value="2024">2024</option>
-                <option value="2023">2023</option>
-                <option value="2022">2022</option>
-              </select>
-            </div>
-          
-            <div class="single-model-search">
-              <h2>Select Make</h2>
-              <select class="form-control">
-                <option value="default">Make</option>
-                <option value="toyota">Toyota</option>
-                <option value="ford">Ford</option>
-                <option value="porsche">Porsche</option>
-                <option value="honda">Honda</option>
-              </select>
-            </div>
-          
-            <div class="single-model-search">
-              <h2>Select Model</h2>
-              <select class="form-control">
-                <option value="default">Model</option>
-                <option value="ALTIS">ALTIS</option>
-                <option value="MARK X">MARK X</option>
-                <option value="PREMIO">PREMIO</option>
-                <option value="GRANDE">GRANDE</option>
-                <option value="YARIS">YARIS</option>
-              </select>
-            </div>
-          
-            <!-- Column 2 -->
-            <div class="single-model-search">
-              <h2>Body Style</h2>
-              <select class="form-control">
-                <option value="default">Style</option>
-                <option value="sedan">Sedan</option>
-                <option value="suv">SUV</option>
-                <option value="roadster">Roadster</option>
-                <option value="sport">Sport</option>
-              </select>
-            </div>
-          
-            <div class="single-model-search">
-              <h2>Car Condition</h2>
-              <select class="form-control">
-                <option value="default">Condition</option>
-                <option value="used">Used</option>
-                <option value="brand new">Brand New</option>
-              </select>
-            </div>
-          
-            <div class="single-model-search">
-              <h2>Select Price</h2>
-              <select class="form-control">
-                <option value="default">Price</option>
-                <option value="$41,500">$41,500</option>
-                <option value="$16,605">$16,605</option>
-                <option value="$40,000">$40,000</option>
-                <option value="$20,000">$20,000</option>
-                <option value="$10,000">$10,000</option>
-              </select>
-            </div>
-          
-            <!-- Search Button -->
-            <div class="search-button-container">
-              <button type="submit">Search</button>
-            </div>
+    <div>
+      <img id="backimage" src="../Assets/welcome/carvilla88bg.png">
+    </div>
+    <div id="custom-table">
+      <!-- Column 1 -->
+      <div class="single-model-search">
+        <h2>Select Year</h2>
+        <select class="form-control">
+          <option value="default">Year</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+        </select>
+      </div>
+
+      <div class="single-model-search">
+        <h2>Select Make</h2>
+        <select class="form-control">
+          <option value="default">Make</option>
+          <option value="toyota">Toyota</option>
+          <option value="ford">Ford</option>
+          <option value="porsche">Porsche</option>
+          <option value="honda">Honda</option>
+        </select>
+      </div>
+
+      <div class="single-model-search">
+        <h2>Select Model</h2>
+        <select class="form-control">
+          <option value="default">Model</option>
+          <option value="ALTIS">ALTIS</option>
+          <option value="MARK X">MARK X</option>
+          <option value="PREMIO">PREMIO</option>
+          <option value="GRANDE">GRANDE</option>
+          <option value="YARIS">YARIS</option>
+        </select>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="single-model-search">
+        <h2>Body Style</h2>
+        <select class="form-control">
+          <option value="default">Style</option>
+          <option value="sedan">Sedan</option>
+          <option value="suv">SUV</option>
+          <option value="roadster">Roadster</option>
+          <option value="sport">Sport</option>
+        </select>
+      </div>
+
+      <div class="single-model-search">
+        <h2>Car Condition</h2>
+        <select class="form-control">
+          <option value="default">Condition</option>
+          <option value="used">Used</option>
+          <option value="brand new">Brand New</option>
+        </select>
+      </div>
+
+      <div class="single-model-search">
+        <h2>Select Price</h2>
+        <select class="form-control">
+          <option value="default">Price</option>
+          <option value="$41,500">$41,500</option>
+          <option value="$16,605">$16,605</option>
+          <option value="$40,000">$40,000</option>
+          <option value="$20,000">$20,000</option>
+          <option value="$10,000">$10,000</option>
+        </select>
+      </div>
+
+      <!-- Search Button -->
+      <div class="search-button-container">
+        <button type="submit">Search</button>
+      </div>
+    </div>
+    <section id="content-section">
+      <h2>SERVICES</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="https://t4.ftcdn.net/jpg/06/92/61/21/360_F_692612180_XAUFLe7Mw3Vvef8H33QudG16RWh9H0d1.jpg"
+            alt="Dealership of cars">
+          <div class="card-overlay">
+            <h3>Dealership of Cars</h3>
           </div>
-        <div id="footer">
-            <div id="footer-content">
-                <h2>CarVilla</h2>
-                <p>Get your desired car in reasonable price</p>
-                <p>&copy; 2023 CarVilla. All rights reserved.</p>
-            </div>
-            <div id="social-media">
-                <a href="#"><img src="../Assets/Logo/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="../Assets/Logo/twitter.png" alt="Twitter"></a>
-                <a href="#"><img src="../Assets/Logo/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="../Assets/Logo/linkedin.png" alt="LinkedIn"></a>
+          <div class="card-body">
+            <h3>The largest car dealership with the best selection and unbeatable deals.</h3>
 
+          </div>
+        </div>
 
+        <div class="card">
+          <img src="https://www.shutterstock.com/image-photo/hand-mechanic-holding-car-service-600nw-2340377479.jpg"
+            alt="Unlimited repair warranty">
+          <div class="card-overlay">
+            <h3>Unlimited Repair Warranty</h3>
+          </div>
+          <div class="card-body">
+            <h3>Enjoy peace of mind with our unlimited repair warranty—coverage you can count on.</h3>
 
+          </div>
+        </div>
 
+        <div class="card">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/025/074/876/non_2x/protection-and-insurance-concept-car-home-and-health-preventing-and-evaluating-potential-business-investment-benefits-life-insurance-protect-your-family-and-loved-ones-from-accidents-free-photo.jpg"
+            alt="Insurance Policy">
+          <div class="card-overlay">
+            <h3>Insurance Policy</h3>
+          </div>
+          <div class="card-body">
+            <h3>Comprehensive insurance coverage tailored to protect what matters most.</h3>
 
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <footer
+        style="background-color: #2c2e4a; color: white; padding: 40px 0 0 0; font-family: sans-serif; width: 100%;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; padding: 0 20px;">
 
+          <!-- Company Info -->
+          <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+            <h2 style="color: white;">CARVILLA</h2>
+            <p>Ased do eiusmod tempor incid ut labore et dolore magnaian aliqua. Ut enim ad minim veniam.</p>
+            <p>name@domain.com<br>+1 (222) 1234567890</p>
+          </div>
 
+          <!-- About Section -->
+          <div style="flex: 1; min-width: 150px; margin-bottom: 20px;">
+            <h3>ABOUT DEVLOON</h3>
+            <ul style="list-style: none; padding: 0;">
+              <li>About Us</li>
+              <li>Career</li>
+              <li>Terms of service</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
 
+          <!-- Top Brands -->
+          <div style="flex: 1; min-width: 150px; margin-bottom: 20px;">
+            <h3>TOP BRANDS</h3>
+            <ul style="list-style: none; padding: 0; column-count: 2;">
+              <li>BMW</li>
+              <li>Ferrari</li>
+              <li>Lamborghini</li>
+              <li>Porsche</li>
+              <li>Camaro</li>
+              <li>Land Rover</li>
+              <li>Audi</li>
+              <li>Aston Martin</li>
+              <li>Infiniti</li>
+              <li>Mercedes</li>
+              <li>Nissan</li>
+            </ul>
+          </div>
 
+          <!-- Newsletter -->
+          <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+            <h3>NEWS LETTER</h3>
+            <p>Subscribe to get latest news update and informations</p>
+            <input type="email" placeholder="Add Email"
+              style="padding: 10px; width: 80%; margin-top: 10px; border: none; border-radius: 4px;">
+          </div>
 
+        </div>
 
-            </div>
+        <!-- Footer Bottom -->
+        <div
+          style="margin-top: 30px; border-top: 1px solid #444; padding: 20px 20px 0 20px; display: flex; justify-content: space-between; flex-wrap: wrap;">
+          <div>
+            <p style="margin: 0;">&copy; 2023 CarVilla. All rights reserved.</p>
+            <p style="margin: 0;">Get your desired car at a reasonable price</p>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <a href="#"><img src="../Assets/Logo/facebook.png" alt="Facebook" width="24"></a>
+            <a href="#"><img src="../Assets/Logo/twitter.png" alt="Twitter" width="24"></a>
+            <a href="#"><img src="../Assets/Logo/instagram.png" alt="Instagram" width="24"></a>
+            <a href="#"><img src="../Assets/Logo/linkedin.png" alt="LinkedIn" width="24"></a>
+          </div>
+        </div>
+      </footer><!-- <script>
+          function MyFunction(info) {
+            const element = document.getElementById("info");
+          }
+        </script>
+        <script>
+          function Myfunction(contentsection) {
+            const element = document.getElementById("content-section");
+          }
+        </script> -->
+
+</html>
 </body>
