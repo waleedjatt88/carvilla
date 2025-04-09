@@ -24,7 +24,6 @@
 .logo {
     margin-left: 30px;
     margin-top: 10px;
-    ;
     height: 70px;
     width: 70px;
     align-items: center;
@@ -67,25 +66,27 @@ div#info {
     word-spacing: 8px;
 }
 
-.btn {
+.btn101 {
     position: absolute;
     top: 68%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgb(46, 118, 250);
-    color: #f7f3f3;
+    background-color: #524bfc;
+    color: white;
     font-size: 17px;
     padding: 12px 24px;
     cursor: pointer;
-    border-radius: 10px 10px;
+    border-radius: 8px;
     text-align: center;
+    border: none;
 
 }
 
-.btn:hover {
-    background-color: rgb(40, 75, 233);
+.btn101:hover {
+    background-color: #403bd1;
 }
+
 
 #custom-table {
     border-radius: 10px;
@@ -94,8 +95,8 @@ div#info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    padding: 30px;
-    max-width: 1000px;
+    padding: 40px;
+    max-width: 1100px;
     margin: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     background-color: rgba(255, 255, 255, 0.95);
@@ -139,4 +140,117 @@ div#info {
 
 .search-button-container button:hover {
     background-color: #403bd1;
+}
+/* New Cars */
+.new-cars-container{
+    background-color:#f7f8fa;
+}
+.new-cars-header {
+    text-align: center;
+    margin: 20px 0;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+.new-cars-header h2 {
+    font-size: 30px;
+    word-spacing: 11px;
+}
+.new-cars-header h5{
+    font-size: 16px;
+    margin-bottom: 10px;
+    word-spacing:4px ;
+}
+.slideshow-container {
+    max-width: 1100px;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.car-slide {
+    display: none;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.car-slide.active {
+    display: block;
+}
+
+.car-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.car-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 30px;
+    padding-top: 60px;
+}
+
+.car-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.car-info p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.view-details {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e10600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.view-details:hover {
+    background-color: #b90500;
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #e10600;
+}
+
+/* Animation for slides */
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
