@@ -4,12 +4,10 @@
     box-sizing: border-box;
     flex-wrap: wrap;
     font-family: sans-serif;
-
-}
-
-* {
     scroll-behavior: smooth;
 }
+
+
 
 #menu {
     display: flex;
@@ -21,6 +19,7 @@
     font-size: larger;
     margin: 50px;
     font-weight: bolder;
+    scroll-behavior: smooth;
 
 
 
@@ -33,6 +32,7 @@
     width: 70px;
     align-items: center;
     cursor: pointer;
+    scroll-behavior: smooth;
 
 }
 
@@ -46,10 +46,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    scroll-behavior: smooth;
 
 }
 
 #header {
+
+
+    scroll-behavior: smooth;
     text-align: center;
 }
 
@@ -58,18 +62,20 @@
     display: flex;
     justify-content: flex-end;
     justify-content: space-between;
+    scroll-behavior: smooth;
 }
 
 
 ul a {
     text-decoration: none;
     color: black;
+    scroll-behavior: smooth;
 
 }
 
-a:hover {
+/* a:hover {
     background-color: yellow;
-}
+} */
 
 div#info {
     text-align: center;
@@ -80,11 +86,12 @@ div#info {
     color: #fff;
     text-transform: capitalize;
     word-spacing: 8px;
+    scroll-behavior: smooth;
 }
 
 .btn101 {
     position: absolute;
-    top: 68%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -96,11 +103,13 @@ div#info {
     border-radius: 8px;
     text-align: center;
     border: none;
+    scroll-behavior: smooth;
 
 }
 
 .btn101:hover {
     background-color: #403bd1;
+    scroll-behavior: smooth;
 }
 
 
@@ -116,18 +125,21 @@ div#info {
     margin: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     background-color: rgba(255, 255, 255, 0.95);
+    scroll-behavior: smooth;
 
 }
 
 .single-model-search {
     display: flex;
     flex-direction: column;
+    scroll-behavior: smooth;
 }
 
 .single-model-search h2 {
     font-size: 16px;
     margin-bottom: 8px;
     color: #333;
+    scroll-behavior: smooth;
 }
 
 .form-control {
@@ -135,6 +147,7 @@ div#info {
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 14px;
+    scroll-behavior: smooth;
 }
 
 .search-button-container {
@@ -142,6 +155,7 @@ div#info {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    scroll-behavior: smooth;
 }
 
 .search-button-container button {
@@ -152,6 +166,7 @@ div#info {
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    scroll-behavior: smooth;
 }
 
 .search-button-container button:hover {
@@ -162,6 +177,7 @@ div#info {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
+
 }
 
 #content-section h2 {
@@ -237,7 +253,7 @@ div#info {
 
 /* New Cars */
 .new-cars-container {
-    background-color:#f7f8fa;
+    background-color: #f7f8fa;
 }
 
 .new-cars-header {
@@ -433,4 +449,13 @@ div#info {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     z-index: 2;
+}
+
+#footer1 a {
+    text-decoration: none;
+}
+
+#footer1 a:hover {
+    opacity: 0.7;
+    color: #fff;
 }
