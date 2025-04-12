@@ -1,6 +1,7 @@
 // JavaScript for the car slideshow
 let slideIndex = 0;
-showSlides();
+showSlides()
+
 
 function showSlides() {
     let i;
@@ -11,6 +12,7 @@ function showSlides() {
     for (i = 0; i < slides.length; i++) {
         slides[i].classList.remove("active");
     }
+
 
     // Increment slide index
     slideIndex++;
@@ -30,10 +32,15 @@ function showSlides() {
     dots[slideIndex - 1].className += " active";
 
     // Change slide every 5 seconds
-    setTimeout(showSlides, 6000);
+    setTimeout(showSlides, 3000);
 }
+
 
 function currentSlide(n) {
     slideIndex = n - 1;
     showSlides();
 }
+document.getElementById('mobile-menu').addEventListener('click', function () {
+    document.getElementById('menu').classList.toggle('active');
+  });
+  

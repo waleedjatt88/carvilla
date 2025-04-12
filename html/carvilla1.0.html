@@ -12,15 +12,18 @@
   <div id="first page">
     <div id="header">
       <div id="navbar">
-        <div class="logo"><img src="../Assets/Logo/logoimage.png"></div>
+        <div class="logo"><img src="../Assets/Logo/logoimage.png" alt="Carvilla Logo"></div>
 
         <ul id="menu">
           <li><a href="#info">HOME</a></li>
           <li><a href="#content-section">SERVICE</a></li>
-          <li><a href="#new-cars-container">FEATURED CARS</a></li>
-          <li><a href="">NEW CARS</a></li>
+          <li><a href="#">FEATURED CARS</a></li>
+          <li><a href="#new-cars-container">NEW CARS</a></li>
           <li><a href="">BRANDS</a></li>
-          <li><a href="#footer">CONTACT</a></li>
+          <li><a href="#footer1">CONTACT</a></li>
+          <div class="menu-toggle" id="mobile-menu">
+            ☰
+          </div>
         </ul>
       </div>
     </div>
@@ -28,9 +31,9 @@
       <h1>get your desired car in resonable price</h1>
       <br><br>
       <h2>Find your dream car at the best price shop now...!</h2>
+
+      <div><button class="btn101">Contact Us</button></div>
     </div>
-    <div><button class="btn101">Contact As</button></div>
-    <div></div>
 
     <div>
       <img id="backimage" src="../Assets/welcome/carvilla88bg.png">
@@ -153,7 +156,7 @@
     </section>
     <br>
     <!-- NEW CARS -->
-    <div class="new-cars-container">
+    <div id="new-cars-container">
       <div class="new-cars-header">
         <h5>checkout the latest cars</h5>
         <h2>newest cars</h2>
@@ -225,46 +228,51 @@
 
         <!-- Company Info -->
         <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
-          <h2 style="color: white;">CARVILLA</h2>
-          <p>Ased do eiusmod tempor incid ut labore et dolore magnaian aliqua. Ut enim ad minim veniam.</p>
-          <p>name@domain.com<br>+1 (222) 1234567890</p>
+          <h2 style="color: white; cursor: pointer;">CARVILLA</h2>
+          <p>Your trusted destination for quality new and used cars, with a focus on reliability, value, and customer
+            satisfaction.</p><br>
+          <div id="contact-info">
+            <p> <a href=""><b>name@domain.com</b></a></p>
+            <p> <a href=""><b>+1 (222) 1234567890</b></a>
+            </p>
+          </div>
         </div>
 
         <!-- About Section -->
-        <div style="flex: 1; min-width: 150px; margin-bottom: 20px;">
-          <h3>ABOUT DEVLOON</h3>
-          <ul style="list-style: none; padding: 0;">
-            <li>About Us</li>
-            <li>Career</li>
-            <li>Terms of service</li>
-            <li>Privacy Policy</li>
+        <div class="About-footer" style="flex: 1; min-width: 150px; margin-bottom: 20px;">
+          <h3 style="cursor: pointer;">ABOUT DEVLOON</h3>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Career</a></li>
+            <li><a href="">Terms of service</a></li>
+            <li><a href="">Privacy Policy</a></li>
           </ul>
         </div>
 
         <!-- Top Brands -->
-        <div style="flex: 1; min-width: 150px; margin-bottom: 20px;">
-          <h3>TOP BRANDS</h3>
-          <ul style="list-style: none; padding: 0; column-count: 2;">
-            <li>BMW</li>
-            <li>Ferrari</li>
-            <li>Lamborghini</li>
-            <li>Porsche</li>
-            <li>Camaro</li>
-            <li>Land Rover</li>
-            <li>Audi</li>
-            <li>Aston Martin</li>
-            <li>Infiniti</li>
-            <li>Mercedes</li>
-            <li>Nissan</li>
+        <div id="Top-Brands" style="flex: 1; min-width: 150px; margin-bottom: 20px;">
+          <h3 style="cursor: pointer;">TOP BRANDS</h3>
+          <ul>
+            <li><a href="">BMW</a></li>
+            <li><a href="">Ferrari</a></li>
+            <li><a href="">Lamborghini</a></li>
+            <li><a href="">Porsche</a></li>
+            <li><a href="">Camaro</a></li>
+            <li><a href="">Land Rover</a></li>
+            <li><a href="">Audi</a></li>
+            <li><a href="">Aston Martin</a></li>
+            <li><a href="">Infiniti</a></li>
+            <li><a href="">Mercedes</a></li>
+            <li><a href="">Nissan</a></li>
           </ul>
         </div>
 
         <!-- Newsletter -->
-        <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
-          <h3>NEWS LETTER</h3>
+        <div id="News-Letter">
+          <h3 style="cursor: pointer;">NEWS LETTER</h3>
           <p>Subscribe to get latest news update and informations</p>
-          <input type="email" placeholder="Add Email"
-            style="padding: 10px; width: 80%; margin-top: 10px; border: none; border-radius: 4px;">
+          <input type="email" placeholder="Add Email">
+          <button>Subscribe</button>
         </div>
         <br>
 
@@ -297,7 +305,8 @@
 
 
 
-    </footer><!-- <script>
+    </footer>
+    <!-- <script>
           function MyFunction(info) {
             const element = document.getElementById("info");
           }
