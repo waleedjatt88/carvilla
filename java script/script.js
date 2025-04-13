@@ -42,5 +42,18 @@ function currentSlide(n) {
 }
 document.getElementById('mobile-menu').addEventListener('click', function () {
     document.getElementById('menu').classList.toggle('active');
-  });
-  
+});
+const logo = document.getElementById("logo-img");
+window.addEventListener("scroll", function () {
+    const header = document.getElementById("header");
+
+    // Add 'scrolled' class if page is scrolled more than 50px
+    if (window.scrollY > 30) {
+        header.classList.add("scrolled");
+        logo.src = "../Assets/Logo/0f1021e9-4dd3-4f4e-888e-498411239af4.png";
+    } else {
+        header.classList.remove("scrolled");
+        logo.src = "../Assets/Logo/logoimage-removebg-preview.png";
+    }
+});
+
