@@ -94,7 +94,7 @@ html {
 #header.scrolled {
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    height: 100px;
+    height: 80px;
 
     transition: background-color 0.4s ease, color 0.4s ease;
 
@@ -104,8 +104,7 @@ html {
     color: aliceblue;
     transition: all 0.3s ease;
     font-size: medium;
-    position: relative;
-    top: -50px;
+
 
 
     gap: 30px;
@@ -118,10 +117,16 @@ html {
     opacity: 0.8;
 }
 
+#header.scrolled #navbar {
+    position: relative;
+    top: -54px;
+}
+
 #header.scrolled .logo img {
 
-
-
+    align-items: center;
+    width: 180px;
+    margin: 3px;
 
 
     padding-inline: 10px;
@@ -130,11 +135,10 @@ html {
 }
 
 #header.scrolled .logo {
-    position: relative;
-    top: -50px;
 
 
-    width: 200px;
+
+
 
     align-items: center;
     cursor: pointer;
@@ -494,36 +498,68 @@ ul a {
 }
 
 
-#content-section h2 {
-    text-align: center;
+#Featured-Cars-Container {
     margin-bottom: 20px;
-    color: #000;
-    font-size: 32px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+.featured-cars-header {
+    padding: 10px;
+    position: relative;
+    top: 0px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
 
-.card:hover {
-    transform: translateY(-10px);
+.featured-cars-header p {
+    color: #4d4dfa;
+}
+
+#featured-cars-card {
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#featured-cars-card:hover {
+    transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card img {
+#featured-cars-card img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 180px;
+    object-fit: contain;
+    background-color: #f9f9f9;
+    padding: 15px;
+    box-shadow: inset 0, 3px, 5px rgba(0, 0, 0, 0.5s);
+}
+
+#featured-cars-card hr {
+    border: none;
+    height: 1px;
+    background-color: #eee;
+    margin: 0;
+}
+
+.car-spec {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #777;
 }
 
 
+#featured-cars-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-inline: 10%;
 
-.card:hover .card-overlay {
-    opacity: 1;
-    /* Show overlay on hover */
-}
-
-.card-overlay h3 {
-    font-size: 20px;
-    text-align: center;
-    padding: 10px;
 }
 
 
