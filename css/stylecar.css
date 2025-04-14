@@ -4,6 +4,7 @@
     box-sizing: border-box;
     flex-wrap: wrap;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 
 }
 
@@ -19,9 +20,6 @@
     font-size: larger;
     margin: 50px;
     font-weight: bolder;
-
-
-
 }
 
 .logo {
@@ -341,4 +339,20 @@ div#info {
 #footer1 a:hover {
     opacity: 0.7;
     color: #fff;
+}
+ /* Featured Cars */
+ .featured-cars-container {
+    text-align: center;
+    margin: 20px 0;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+.featured-cars-container h2 {
+    font-size: 30px;
+    word-spacing: 11px;
+}
+.featured-cars-container h5{
+    font-size: 16px;
+    margin-bottom: 10px;
+    word-spacing:4px ;
 }
