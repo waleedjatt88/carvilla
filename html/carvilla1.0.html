@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarVilla1.0</title>
-    <link rel="stylesheet" href="/css/stylecar.css">
+  <link rel="icon" href="../Assets/Logo/ChatGPT Image Apr 14, 2025, 06_35_13 PM.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarVilla1.0</title>
+  <link rel="stylesheet" href="/css/stylecar.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
               <li><a href="#contentsection">SERVICE</a></li>
               <li><a href="#newcarscontainer">NEW CARS</a></li>
               <li><a href="#FeaturedCarsContainer">FEATURED CARS</a></li>
-              <li><a href="">BRANDS</a></li>
+              <li><a href="#brandssection">BRANDS</a></li>
               <li><a href="#footer1">CONTACT</a></li>
               <div class="menu-toggle" id="mobile-menu">
                 ☰
@@ -39,7 +40,7 @@
         <br><br>
         <h2>Find your dream car at the best price shop now...!</h2>
 
-        <div><button class="btn101">Contact Us</button></div>
+        <button class="btn101">Contact Us</button>
       </div>
 
 
@@ -123,7 +124,7 @@
     <div id="contentsection"></div>
     <br><br><br>
     <section id="content-section">
-      <h2>SERVICES</h2>
+      <h2 style="color: black;">SERVICES</h2>
       <div class="cards">
         <div class="card">
           <img src="https://t4.ftcdn.net/jpg/06/92/61/21/360_F_692612180_XAUFLe7Mw3Vvef8H33QudG16RWh9H0d1.jpg"
@@ -236,67 +237,272 @@
     <br><br><br><br>
     <div id="Featured-Cars-Container">
       <div class="featured-cars-header">
-        <h3>checkout the latest cars</h3>
-        <h2> Featured Cars</h2>
+        <h3>Checkout the Latest Cars</h3>
+        <h2>Featured Cars</h2>
         <br>
         <p style="font-weight: 700;">________</p>
       </div>
+
       <div id="featured-cars-cards">
-        <div id="featured-cars-card"><img
-            src="https://di-uploads-pod7.dealerinspire.com/mercedesbenzofsandiegoredesign/uploads/2018/04/2018-Mercedes-Benz-C-Class-C-300-hub.png"
-            alt="Mercedes-Benz E-Class">
-          <hr>
-          <p class="car-spec">Model: 2024 | 0 mi | 255–375 HP | Automatic</p>
+        <!-- Card 1 -->
+        <div id="f-cards-container">
+          <div id="featured-cars-card">
+            <img
+              src="https://di-uploads-pod7.dealerinspire.com/mercedesbenzofsandiegoredesign/uploads/2018/04/2018-Mercedes-Benz-C-Class-C-300-hub.png"
+              alt="Mercedes-Benz E-Class">
+            <hr>
+            <p class="car-spec">Model: 2024 | 0 mi | 255–375 HP | Automatic</p>
+          </div>
+          <div class="card-description">
+            <h2>Mercedes-Benz E-Class</h2>
+            <h4>$62,450</h4>
+            <p>A luxury sedan offering advanced features, premium comfort, and a powerful engine for a smooth driving
+              experience.</p>
+          </div>
         </div>
-        <div id="featured-cars-card"> <img
-            src="https://files.toyota.com.bh/s3fs-public/2024-07/Silver%20Metallic.png?VersionId=aXJCCELNmmrWab6lfNb5w9_6uZ6_FGMQ"
-            alt="Toyota Camry">
-          <hr>
-          <p class="car-spec">Model: 2024 | 0 mi | 203–301 HP | Automatic</p>
+
+        <!-- Card 2 -->
+        <div id="f-cards-container">
+          <div id="featured-cars-card">
+            <img src="https://www.pngplay.com/wp-content/uploads/15/Camry-Toyota-Transparent-PNG.png"
+              alt="Toyota Camry">
+            <hr>
+            <p class="car-spec">Model: 2024 | 0 mi | 203–301 HP | Automatic</p>
+          </div>
+          <div class="card-description">
+            <h2>Toyota Camry</h2>
+            <h4>$29,495</h4>
+            <p>A reliable and fuel-efficient sedan, perfect for daily commutes and long drives with a stylish design.
+            </p>
+          </div>
         </div>
-        <div id="featured-cars-card"> <img
-            src="https://pictures.dealer.com/l/livermorehonda/0793/5be48bbca961897596cd28bfe999eec5x.jpg?impolicy=downsize_bkpt&w=396"
-            alt="Honda Accord">
-          <hr>
-          <p class="car-spec">Model: 2024 | 0 mi | 192–204 HP | Automatic</p>
+
+        <!-- Card 3 -->
+        <div id="f-cards-container">
+          <div id="featured-cars-card">
+            <img
+              src="https://pictures.dealer.com/l/livermorehonda/0793/5be48bbca961897596cd28bfe999eec5x.jpg?impolicy=downsize_bkpt&w=396"
+              alt="Honda Accord">
+            <hr>
+            <p class="car-spec">Model: 2024 | 0 mi | 192–204 HP | Automatic</p>
+          </div>
+          <div class="card-description">
+            <h2>Honda Accord</h2>
+            <h4>$27,895</h4>
+            <p>A spacious and stylish sedan equipped with cutting-edge technology and excellent performance.</p>
+          </div>
         </div>
-        <div id="featured-cars-card"> <img
-            src="https://cache.easifleet.com.au/http/tesla-model-3.png/d8c74f6584f524a5f1d9ec879877bfe1/tesla-model-3.webp"
-            alt="Tesla Model 3">
-          <hr>
-          <p class="car-spec">Model: 2024 | 0 mi | 283–455 HP | Automatic (Electric)</p>
+
+        <!-- Card 4 -->
+        <div id="f-cards-container">
+          <div id="featured-cars-card">
+            <img
+              src="https://cache.easifleet.com.au/http/tesla-model-3.png/d8c74f6584f524a5f1d9ec879877bfe1/tesla-model-3.webp"
+              alt="Tesla Model 3">
+            <hr>
+            <p class="car-spec">Model: 2024 | 0 mi | 255–382 HP | Automatic (Electric)</p>
+          </div>
+          <div class="card-description">
+            <h2>Tesla Model 3</h2>
+            <h4>$38,990</h4>
+            <p>A high-performance electric vehicle with impressive range, innovative features, and eco-friendly design.
+            </p>
+          </div>
         </div>
-        <div id="featured-cars-card"> <img
-            src="https://bmw-laxmi.com.np/assets/frontend/images/all-models/3-series/inform/cosySec1.png" alt="BMW 3
-            Series">
-          <hr>
-          <p class="car-spec">Model: 2024 | 0 mi | 255–382 HP | Automatic</p>
+
+        <!-- Card 5 -->
+        <div id="f-cards-container">
+          <div id="featured-cars-card">
+            <img src="https://bmw-laxmi.com.np/assets/frontend/images/all-models/3-series/inform/cosySec1.png"
+              alt="BMW 3 Series">
+            <hr>
+            <p class="car-spec">Model: 2024 | 0 mi | 255–382 HP | Automatic</p>
+          </div>
+          <div class="card-description">
+            <h2>BMW 3 Series</h2>
+            <h4>$43,800</h4>
+            <p>A sporty and elegant sedan with dynamic driving capabilities and a luxurious interior.</p>
+          </div>
         </div>
-        <div id="featured-cars-card"> <img
-            src="https://d3ogcz7gf2u1oh.cloudfront.net/dealers/1000islands/assets/2022.rav4.awd.xle.premium-lrg.png"
-            alt="Toyota RAV4">
-          <hr>
-          <p class="car-spec">Model: 2024 | 0 mi | 203–219 HP | Automatic</p>
+
+        <!-- Card 6 -->
+        <div id="f-cards-container">
+          <div id="featured-cars-card">
+            <img
+              src="https://d3ogcz7gf2u1oh.cloudfront.net/dealers/1000islands/assets/2022.rav4.awd.xle.premium-lrg.png"
+              alt="Toyota RAV4">
+            <hr>
+            <p class="car-spec">Model: 2024 | 0 mi | 203–219 HP | Automatic</p>
+          </div>
+          <div class="card-description">
+            <h2>Toyota RAV4</h2>
+            <h4>$28,475</h4>
+            <p>A versatile SUV designed for both off-road adventures and city driving, offering comfort and reliability.
+            </p>
+          </div>
         </div>
-        <div id="featured-cars-card"> <img src="https://pngimg.com/d/mazda_PNG63.png" alt="Mazda CX-5">
-          <hr>
-          <p class="car-spec">Model: 2024 | 0 mi | 187–256 HP | Automatic</p>
+        <div id="f-cards-container">
+          <div id="featured-cars-card">
+            <img src="https://pngimg.com/d/mazda_PNG63.png" alt="Mazda CX-5">
+            <hr>
+            <p class="car-spec">Model: 2024 | 0 mi | 187–256 HP | Automatic</p>
+          </div>
+          <div class="card-description">
+            <h2>Mazda CX-5</h2>
+            <h4>$26,700</h4>
+            <p>A compact SUV with a sleek design, responsive handling, and a comfortable interior for families.</p>
+          </div>
         </div>
-        <div id="featured-cars-card"> <img
-            src="https://dealerimages.dealereprocess.com/image/upload/c_limit,f_auto,fl_lossy,w_600/v1/svp/dep/22hyundaiioniq5/hyunda_22ioniq5_angularfront_atlaswhite"
-            alt="hyundai Ioniq 5">
-          <hr>
-          <p class="car-spec">Model: 2024 | 0 mi | 168–320 HP | Automatic (Electric)</p>
+        <div id="f-cards-container">
+          <div id="featured-cars-card">
+            <img
+              src="https://dealerimages.dealereprocess.com/image/upload/c_limit,f_auto,fl_lossy,w_600/v1/svp/dep/22hyundaiioniq5/hyunda_22ioniq5_angularfront_atlaswhite"
+              alt="Hyundai Ioniq 5">
+            <hr>
+            <p class="car-spec">Model: 2024 | 0 mi | 168–320 HP | Automatic (Electric)</p>
+          </div>
+          <div class="card-description">
+            <h2>Hyundai Ioniq 5</h2>
+            <h4>$41,450</h4>
+            <p>A futuristic electric SUV with innovative features, great efficiency, and a bold design.</p>
+          </div>
         </div>
-        <div id="featured-cars-card"> <img
-            src="https://www.pngplay.com/wp-content/uploads/13/Kia-Telluride-Download-Free-PNG.png" alt="Kia Telluride">
-          <hr>
-          <p class="car-spec">Model: 2024 | 0 mi | 291 HP | Automatic</p>
+        <div id="f-cards-container">
+          <div id="featured-cars-card">
+            <img src="https://www.pngplay.com/wp-content/uploads/13/Kia-Telluride-Download-Free-PNG.png"
+              alt="Kia Telluride">
+            <hr>
+            <p class="car-spec">Model: 2024 | 0 mi | 291 HP | Automatic</p>
+          </div>
+          <div class="card-description">
+            <h2>Kia Telluride</h2>
+            <h4>$35,690</h4>
+            <p>A spacious and family-friendly SUV with a bold exterior, advanced safety features, and a comfortable
+              ride.</p>
+          </div>
         </div>
       </div>
+    </div>
+    <div id="brandssection"></div><br><br><br>
+    <br>
+    <!-- NEW BRANDS SECTION -->
+    <div id="brands-section">
+      <div class="brands-header">
+        <h5>EXPLORE OUR PARTNERS</h5>
+        <h2>TOP BRANDS</h2>
+        <p style="font-weight: 700;">________</p>
+      </div>
 
+      <div class="brands-container">
+        <!-- BMW -->
+        <div class="brand-card">
+          <img src="https://www.carlogos.org/car-logos/bmw-logo.png" alt="BMW">
+          <h3>BMW</h3>
+          <p>Luxury vehicles known for performance and innovation</p>
+        </div>
+
+        <!-- Mercedes -->
+        <div class="brand-card">
+          <img src="https://www.carlogos.org/logo/Mercedes-Benz-logo-2011-1920x1080.png" alt="Mercedes-Benz">
+          <h3>Mercedes-Benz</h3>
+          <p>Premium vehicles with cutting-edge technology</p>
+        </div>
+
+        <!-- Audi -->
+        <div class="brand-card">
+          <img src="https://www.carlogos.org/car-logos/audi-logo.png" alt="Audi">
+          <h3>Audi</h3>
+          <p>German engineering with sophisticated design</p>
+        </div>
+
+        <!-- Toyota -->
+        <div class="brand-card">
+          <img src="https://www.carlogos.org/car-logos/toyota-logo.png" alt="Toyota">
+          <h3>Toyota</h3>
+          <p>Reliable and efficient vehicles for every need</p>
+        </div>
+
+        <!-- Ferrari -->
+        <div class="brand-card">
+          <img src="https://www.carlogos.org/logo/Ferrari-logo-2560x1440.png" alt="Ferrari">
+          <h3>Ferrari</h3>
+          <p>Italian supercars with racing heritage</p>
+        </div>
+
+        <!-- Porsche -->
+        <div class="brand-card">
+          <img src="https://www.carlogos.org/car-logos/porsche-logo.png" alt="Porsche">
+          <h3>Porsche</h3>
+          <p>Sports cars combining luxury and performance</p>
+        </div>
+
+        <!-- Tesla -->
+        <div class="brand-card">
+          <img src="https://www.carlogos.org/car-logos/tesla-logo.png" alt="Tesla">
+          <h3>Tesla</h3>
+          <p>Electric vehicles pushing technological boundaries</p>
+        </div>
+
+        <!-- Land Rover -->
+        <div class="brand-card">
+          <img src="https://www.carlogos.org/logo/Land-Rover-logo-2011-1920x1080.png" alt="Land Rover">
+          <h3>Land Rover</h3>
+          <p>Luxury SUVs with unparalleled off-road capability</p>
+        </div>
+      </div>
     </div>
 
+    <!-- IMPROVED CLIENTS SECTION -->
+    <div id="Clients">
+      <div class="clients-header">
+        <h3>What Our Clients Say</h3>
+        <p>We are honored to have served a wide range of clients who trust us for their car needs. Here's what they have
+          to say about CarVilla.</p>
+      </div>
+      <div class="testimonials-container">
+        <!-- Testimonial 1 -->
+        <div class="testimonial">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-1tcZ9AWzzwu277kA0NAaGBdohRFmt-r59Q&s"
+            alt="Liam Carter">
+          <h4>Liam Carter</h4>
+          <p>"CarVilla made my car-buying experience seamless and enjoyable. Their team was professional, and I found
+            the perfect car within my budget."</p>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial">
+          <img
+            src="https://c8.alamy.com/comp/JBEFBR/confident-happy-business-woman-posing-isolated-on-a-white-background-JBEFBR.jpg"
+            alt="Sophia Bennett">
+          <h4>Sophia Bennett</h4>
+          <p>"I was impressed by the wide selection of cars and the excellent customer service. CarVilla truly exceeded
+            my expectations."</p>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="testimonial">
+          <img
+            src="https://st.depositphotos.com/1743476/1276/i/950/depositphotos_12765264-stock-photo-smiling-business-man.jpg"
+            alt="Ethan Rivera">
+          <h4>Ethan Rivera</h4>
+          <p>"The team at CarVilla helped me find my dream car. Their expertise and dedication made the process
+            stress-free and enjoyable."</p>
+        </div>
+      </div>
+      <div class="clients-logos">
+        <h3>Trusted By</h3>
+        <div class="logos-container">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/54a8956de4b00fb49e1c9675/1553724256165-4BY0JHG0HYKP3E4WM2HW/CARFAX+Brand+Header.png"
+            alt="Client 1">
+          <img src="https://carfax.world/static/assets/img/AutoCheck.jpg" alt="Client 2">
+          <img src="https://vectorseek.com/wp-content/uploads/2023/08/Bosch-Automotive-Logo-Vector.svg-.png"
+            alt="Client 3">
+          <img src="https://cdn.entergynewsroom.com/userfiles/TX%20Advocate%20Power/JD%20Power.png" alt="Client 4">
+          <img
+            src="https://i.pinimg.com/736x/87/00/88/870088d039540e5ce066ff5b17d8fdf9.jpg"
+            alt="Client 5">
+        </div>
+      </div>
+    </div>
     <footer style="background-color: #2c2e4a; color: white; padding: 40px 0 0 0; font-family: sans-serif; width: 100%;">
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; padding: 0 20px;">
 
