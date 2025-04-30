@@ -2,7 +2,6 @@
 let slideIndex = 0;
 showSlides()
 
-
 function showSlides() {
     let i;
     let slides = document.getElementsByClassName("car-slide");
@@ -12,8 +11,6 @@ function showSlides() {
     for (i = 0; i < slides.length; i++) {
         slides[i].classList.remove("active");
     }
-
-
     // Increment slide index
     slideIndex++;
 
@@ -34,8 +31,6 @@ function showSlides() {
     // Change slide every 5 seconds
     setTimeout(showSlides, 3000);
 }
-
-
 function currentSlide(n) {
     slideIndex = n - 1;
     showSlides();
@@ -46,8 +41,6 @@ document.getElementById('mobile-menu').addEventListener('click', function () {
 const logo = document.getElementById("logo-img");
 window.addEventListener("scroll", function () {
     const header = document.getElementById("header");
-
-
     if (window.scrollY > 20) {
         header.classList.add("scrolled");
         logo.src = "../Assets/Logo/0f1021e9-4dd3-4f4e-888e-498411239af4.png";
@@ -56,4 +49,30 @@ window.addEventListener("scroll", function () {
         logo.src = "../Assets/Logo/logoimage-removebg-preview.png";
     }
 });
+// document.addEventListener('DOMContentLoaded', function() {
+//     const menuToggle = document.getElementById('mobile-menu');
+//     const menu = document.getElementById('menu');
+    
+//     menuToggle.addEventListener('click', function() {
+//         menu.classList.toggle('active');
+//         // Change hamburger to X when active
+//         if (menu.classList.contains('active')) {
+//             menuToggle.innerHTML = '✕';
+//         } else {
+//             menuToggle.innerHTML = '☰';
+//         }
+//     });
+    
+//     // Close menu when a link is clicked (for mobile)
+//     const menuItems = document.querySelectorAll('#menu li a');
+//     menuItems.forEach(item => {
+//         item.addEventListener('click', function() {
+//             if (window.innerWidth <= 768) {
+//                 menu.classList.remove('active');
+//                 menuToggle.innerHTML = '☰';
+//             }
+//         });
+//     });
+// });
+
 
