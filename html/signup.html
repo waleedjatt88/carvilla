@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../css/signup.css">
+    <script src="https://kit.fontawesome.com/cb1a7cb8a8.js" crossorigin="anonymous"></script>
+</head>
+<body background="../Assets/login-signup/50fa0119-e7bd-4fab-ab41-4427036b1b97_large.webp">
+    <div class="signup-container">
+        <div class="logo">
+            <i class="fas fa-car"></i>
+            <h2>CarVilla</h2>
+        </div>
+        
+        <form class="signup-form" action="/signup" method="POST">
+            <div class="name-fields">
+                <div class="input-group">
+                    <i class="fa-regular fa-user"style="color: #0c7ed4;"></i>
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-regular fa-user"style="color: #0c7ed4;"></i>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <i class="fa-regular fa-envelope" style="color: #0c7ed4;"></i>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+            
+            <div class="input-group">
+                <i class="fa-solid fa-lock" style="color: #0299d9;"></i>
+                <input type="password" id="password" name="password" placeholder="Create Password" required>
+            </div>
+            
+            <div class="input-group">
+                <i class="fa-solid fa-lock" style="color: #0299d9;"></i>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+            </div>
+            
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+            </div>
+            
+            <button type="submit" class="signup-btn">Create Account</button>
+            
+            <div class="login-link">
+                Already have an account? <a href="login.html">Log in</a>
+            </div>
+            
+            <div class="social-signup">
+                <p>Or sign up with</p>
+                <div class="social-icons">
+                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="google"><i class="fab fa-google"></i></a>
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+   

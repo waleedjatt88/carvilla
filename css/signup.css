@@ -12,12 +12,11 @@ body{
   justify-content: center;
   align-items: center;;
 }
-
-.login-container {
+.signup-container {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    width: 380px;
+    width: 420px;
     padding: 40px;
     position: relative;
     z-index: 2;
@@ -27,32 +26,36 @@ body{
 .logo {
     text-align: center;
     margin-bottom: 25px;
-    cursor: pointer;
 }
+
 .logo i {
     font-size: 40px;
     color: #e74c3c;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .logo h2 {
     color: #333;
     font-size: 24px;
     font-weight: 600;
+    cursor: pointer;
 }
 
-.login-form .input-group {
-    margin-bottom: 20px;
+.signup-form .input-group {
+    margin-bottom: 15px;
     position: relative;
 }
-.login-form .input-group i {
+
+.signup-form .input-group i {
     position: absolute;
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
     color: #777;
 }
-.login-form .input-group input {
+
+.signup-form .input-group input {
     width: 100%;
     padding: 12px 15px 12px 45px;
     border: 1px solid #ddd;
@@ -61,34 +64,41 @@ body{
     transition: all 0.3s;
 }
 
-.login-form .input-group input:focus {
+.signup-form .input-group input:focus {
     border-color: #e74c3c;
     outline: none;
     box-shadow: 0 0 5px rgba(231, 76, 60, 0.3);
 }
-.options {
+
+.name-fields {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    font-size: 13px;
+    gap: 15px;
 }
 
-.options label {
-    color: #555;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.name-fields .input-group {
+    flex: 1;
 }
-.options a {
+
+.terms {
+    margin: 20px 0;
+    font-size: 13px;
+    color: #555;
+}
+
+.terms input {
+    margin-right: 8px;
+}
+
+.terms a {
     color: #e74c3c;
     text-decoration: none;
 }
 
-.options a:hover {
+.terms a:hover {
     text-decoration: underline;
 }
-.login-btn {
+
+.signup-btn {
     width: 100%;
     padding: 12px;
     background-color: #e74c3c;
@@ -101,33 +111,35 @@ body{
     transition: background-color 0.3s;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-bottom: 20px;
 }
-.login-btn:hover {
+
+.signup-btn:hover {
     background-color: #c0392b;
 }
 
-.register {
+.login-link {
     text-align: center;
-    margin-top: 20px;
     color: #555;
     font-size: 14px;
 }
 
-.register a {
+.login-link a {
     color: #e74c3c;
     text-decoration: none;
     font-weight: 600;
 }
-.register a:hover {
+
+.login-link a:hover {
     text-decoration: underline;
 }
 
-.social-login {
+.social-signup {
     margin-top: 25px;
     text-align: center;
 }
 
-.social-login p {
+.social-signup p {
     color: #777;
     font-size: 13px;
     margin-bottom: 15px;
@@ -151,6 +163,7 @@ body{
     text-decoration: none;
     transition: transform 0.3s;
 }
+
 .social-icons a:hover {
     transform: translateY(-3px);
 }
